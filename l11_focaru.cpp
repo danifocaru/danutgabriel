@@ -9,7 +9,7 @@ public:
 	int size() const;
 	bool isEmpty() const;
 	const T& top() const {
-		if (isEmpty()) throw "Stiva  este goala\n";
+		if (isEmpty()) throw "Stiva   goala\n"; /modificare
 		return v.back();
 	}
 	void push(const T& ob);
@@ -26,7 +26,7 @@ template<typename T> void Stack<T>::push(const T& ob) {
 }
 
 template<typename T> void Stack<T>::pop() {
-	if (isEmpty()) throw "Stiva este goala\n";
+	if (isEmpty()) throw "Stiva goala\n";
 	v.pop_back();
 }
 
